@@ -670,4 +670,29 @@ const techStack=[
   {word:'PHP · Laravel',   sub:'full-stack',      glaze:false},
   {word:'React',           sub:'frontend',        glaze:false},
   {word:'REST APIs',       sub:'architecture',    glaze:false},
-  {word:'AWS · Docker',
+  {word:'AWS · Docker',    sub:'cloud + devops',  glaze:false},
+  {word:'PostgreSQL',      sub:'databases',       glaze:false},
+  {word:'PySpark',         sub:'data engineering',glaze:false},
+  {word:'LLMs',            sub:'gen ai',          glaze:true},
+  {word:'MCP · RAG',       sub:'ai integration',  glaze:true},
+  {word:'Agentic AI',      sub:'systems',         glaze:true},
+];
+let ti=0;
+function cycleTech(){
+  wtWord.classList.add('wt-fade');
+  wtSub.classList.add('wt-fade');
+  setTimeout(()=>{
+    ti=(ti+1)%techStack.length;
+    const t=techStack[ti];
+    wtWord.textContent=t.word;
+    wtSub.textContent=t.sub;
+    wtWord.classList.toggle('glz',t.glaze);
+    wtWord.classList.remove('wt-fade');
+    wtSub.classList.remove('wt-fade');
+  },380);
+}
+(function init(){const t=techStack[0];wtWord.textContent=t.word;wtSub.textContent=t.sub;wtWord.classList.toggle('glz',t.glaze);})();
+setInterval(cycleTech,2000);
+</script>
+</body>
+</html>
