@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -175,6 +174,7 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(30px,4.4vw,46px)
 .piece .body{position:relative;z-index:2}
 .piece h3{font-family:'Fraunces',serif;font-weight:600;font-size:23px;color:var(--ink);margin:0 0 12px;line-height:1.15}
 .piece p{color:var(--muted);font-size:15px;margin-bottom:16px}
+.piece p b{color:var(--ink);font-weight:600}
 .metric{display:inline-block;font-family:'Fraunces',serif;font-style:italic;font-size:14px;color:var(--glaze-bright);font-weight:500}
 .stack-line{font-size:12.5px;letter-spacing:.4px;color:var(--faint);line-height:1.5}
 .stack-line span{color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:1px}
@@ -220,6 +220,7 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(30px,4.4vw,46px)
 .exp ul{list-style:none}
 .exp li{color:var(--muted);font-size:15px;padding-left:22px;position:relative;margin-bottom:9px}
 .exp li::before{content:"◠";position:absolute;left:0;color:var(--ember);font-weight:700}
+.exp li b{color:var(--ink);font-weight:600}
 
 /* ---- EDUCATION ---- */
 .edu-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:14px 34px 14px 34px;padding:22px 28px;margin-bottom:14px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
@@ -288,7 +289,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         <span class="l1">Engineering systems<br>that scale,</span>
         <span class="l2">and the AI that<br>runs inside them.</span>
       </h1>
-      <p class="lead">I'm <b>Manimegalai Mamallan</b>, a <b class="hl">full-stack software engineer</b> with 6+ years building and operating production systems, now focused on integrating <b>LLMs, MCP and agentic AI</b> into the backends people depend on. I ship software that scales to millions and the intelligence layered on top.</p>
+      <p class="lead">I'm <b>Manimegalai Mamallan</b>, a <b class="hl">full-stack software engineer</b> with 6+ years designing and operating production systems, from a platform sustaining <b>5M+ daily API calls</b> to <b>MCP-based agentic layers</b> that let non-technical users query live data in natural language. I build the backend, and the intelligence on top of it.</p>
       <div class="hero-cta">
         <a href="#kiln" class="btn btn-p">See the work →</a>
         <a href="#gallery" class="btn btn-s">Start a conversation</a>
@@ -315,7 +316,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
 <!-- torn divider -->
 <div class="torn"><svg viewBox="0 0 1200 46" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,28 C80,10 160,40 250,26 C340,12 420,38 520,28 C620,18 700,42 800,28 C900,14 980,38 1080,26 C1140,18 1180,32 1200,26 L1200,46 L0,46 Z" fill="currentColor"/></svg></div>
 
-<!-- WORK BY THE NUMBERS (moved to top) -->
+<!-- WORK BY THE NUMBERS -->
 <section id="numbers">
   <div class="wrap">
     <div class="sec-label"></div>
@@ -324,7 +325,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
       <div class="stat">
         <div class="num">6<span class="u">+ yrs</span></div>
         <div class="lbl">Engineering</div>
-        <div class="sub">Production software across full-stack &amp; backend</div>
+        <div class="sub">Architecture, delivery and production ownership across full-stack &amp; backend</div>
       </div>
       <div class="stat">
         <div class="num">5<span class="u">M+</span></div>
@@ -339,7 +340,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
       <div class="stat">
         <div class="num">85<span class="u">%</span></div>
         <div class="lbl">Faster Deploys</div>
-        <div class="sub">Via 7-stage Jenkins CI/CD pipelines</div>
+        <div class="sub">Deployment time cut via a 7-stage Jenkins pipeline with test gates and auto-rollback</div>
       </div>
       <div class="stat">
         <div class="num">3<span class="u">×</span></div>
@@ -349,17 +350,17 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
       <div class="stat">
         <div class="num">+6.45<span class="u">%</span></div>
         <div class="lbl">Over Baseline</div>
-        <div class="sub">ML therapy model vs. physician prescribing</div>
+        <div class="sub">Appropriate-therapy lift over physician prescribing (80K-record dataset)</div>
       </div>
       <div class="stat">
         <div class="num">15<span class="u">M+</span></div>
         <div class="lbl">Records Modeled</div>
-        <div class="sub">Distributed Spark ML pipeline, F1 0.896</div>
+        <div class="sub">Distributed Spark pipeline; severity models at F1 0.896</div>
       </div>
       <div class="stat">
         <div class="num">$1<span class="u">M+</span></div>
         <div class="lbl">Annual Revenue</div>
-        <div class="sub">Magento storefront I built &amp; shipped</div>
+        <div class="sub">E-commerce platform whose backend APIs I built</div>
       </div>
     </div>
   </div>
@@ -372,9 +373,9 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
     <h2>Where the material comes from</h2>
     <div class="about reveal">
       <div>
-        <p>I spent <b class="hl">6+ years</b> at <b>Ashok Leyland</b> learning that good software is a craft you do with your hands, architecting high-availability platforms, leading a team of <b class="hl">five</b>, and shipping a customer application that grew to <b class="hl">500K+ users</b>, <b class="hl">300K daily actives</b>, and <b class="hl">5M+ daily API calls</b>, work that earned <b class="hl">3 National Customer Experience Excellence awards</b>.</p>
+        <p>At <b>Ashok Leyland</b> I spent <b class="hl">6+ years</b> architecting high-availability platforms and leading a team of <b class="hl">five</b>. I independently architected and launched a customer application that scaled to <b class="hl">500K+ users</b>, <b class="hl">300K daily actives</b> and <b class="hl">5M+ daily API calls</b>, earning <b class="hl">3× National Customer Experience Excellence awards</b>.</p>
         <p>Then, finishing my <b>M.S. in Data Science at the University at Buffalo</b> and researching ML at <b>Machinery Monitoring Services</b>, I fused the two: I built a <b class="hl">real-time predictive-monitoring platform full-stack</b> — a Python inference pipeline behind a live <b class="hl">React dashboard</b>, containerized with <b class="hl">Docker</b> on <b class="hl">AWS</b> — then layered an agentic AI interface with <b>MCP and LLMs</b> on top, so non-technical users could query complex live sensor data conversationally. The kind of solid backend I've always built, now with intelligence on top.</p>
-        <p>I enjoy building systems that work under load, whether it's a <b>REST API serving millions</b> or a model that has to beat a real baseline, I'm interested in the version that ships and holds up.</p>
+        <p>I enjoy building systems that work under load, whether it's a <b>REST API serving millions</b> or a model that has to beat a real baseline. Right now I'm at the University at Buffalo building a full-stack application that replaces manual lab workflows for faculty researchers. I'm interested in the version that ships and holds up.</p>
       </div>
       <div class="vessel">
         <h4>Languages &amp; Frameworks</h4>
@@ -422,7 +423,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         </div>
         <div class="body">
           <h3>Accident Risk Prediction System</h3>
-          <p>A distributed PySpark pipeline joining 7M+ accident records against 8M+ weather and hospital records via temporal-window and geospatial joins, feeding Spark ML severity models. Served through a custom MCP layer that exposes the trained PipelineModels to Claude Desktop for real-time, natural-language inference, with no Spark required by the end user.</p>
+          <p>Delivered natural-language access to accident-severity predictions (<b>F1 up to 0.896</b>) by building a distributed <b>PySpark</b> pipeline that joins 7M+ accident records with 8M+ weather and hospital records through temporal-window and geospatial joins, with schema alignment and join optimization feeding <b>Spark ML</b> severity models. The trained PipelineModels are served through a custom <b>MCP</b> layer to Claude Desktop for real-time, natural-language inference, so end users need no Spark.</p>
           <span class="view-cue">View project &amp; repo <span class="arr">→</span></span>
         </div>
       </a>
@@ -438,7 +439,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         </div>
         <div class="body">
           <h3>Vulnerability Intelligence Lakehouse</h3>
-          <p>A Medallion (Bronze/Silver/Gold) lakehouse on Databricks ingesting 40K+ CVE v5 records with schema-on-read PySpark and recursive JSON normalization. Governance and validation gates enforce data quality across layers; optimized Gold-layer SQL surfaces prioritized vulnerability insights for self-service stakeholder reporting.</p>
+          <p>Turned 40K+ nested CVE v5 JSON records into governed, queryable analytics by building a <b>Medallion (Bronze/Silver/Gold) lakehouse</b> on <b>Databricks</b> and <b>Delta Lake</b>, using schema-on-read <b>PySpark</b> ingestion, recursive JSON normalization and validation gates between layers. Optimized Gold-layer <b>SQL</b> surfaces zero-day latency patterns and high-risk vendor concentrations for self-service stakeholder reporting.</p>
           <span class="view-cue">View project &amp; repo <span class="arr">→</span></span>
         </div>
       </a>
@@ -454,7 +455,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         </div>
         <div class="body">
           <h3>e-Commerce Data Analytics Platform</h3>
-          <p>A normalized PostgreSQL schema modeling customers, sellers, orders, payments, reviews and geolocation. Analytical SQL (joins, aggregations, window functions) surfaces top revenue products and spending patterns; query plans tuned via EXPLAIN, indexing and restructuring. Containerized with Docker and shipped as an interactive Streamlit app for custom querying.</p>
+          <p>Modeled customers, sellers, orders, payments, reviews and geolocation in a normalized <b>PostgreSQL</b> schema, then tuned join and window-function analytics through <b>EXPLAIN</b>-driven indexing and query restructuring to surface top revenue products and customer spending patterns. Shipped as a containerized <b>Docker</b> / <b>Streamlit</b> app for custom SQL exploration.</p>
           <span class="view-cue">View project &amp; repo <span class="arr">→</span></span>
         </div>
       </a>
@@ -470,7 +471,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         </div>
         <div class="body">
           <h3>VibeDiag — Machinery Fault Detection</h3>
-          <p>A production fault-detection system for industrial rotating machinery. Deep-learning models on FFT-transformed triaxial accelerometer data classify faults and predict severity at 99% accuracy, behind a real-time acquisition pipeline handling threaded serial comms, hex-stream parsing and waveform reconstruction. A plugin-based model registry swaps models without changing the calling interface, and an agentic AI layer (MCP + LLMs) answers natural-language fault queries over live data.</p>
+          <p>Detected industrial machinery faults and predicted severity at <b>99% accuracy</b> by training deep-learning models (<b>1D CNN</b>) on <b>FFT</b>-transformed triaxial accelerometer data, behind a real-time acquisition pipeline built on threaded serial comms, hex-stream parsing and waveform reconstruction. Architected a plugin-based model registry behind a unified inference API contract so models swap in production without caller changes, and added an <b>MCP</b> + LLM layer for natural-language fault queries over live data.</p>
           <span class="view-cue static">Industry project · private repo</span>
         </div>
       </a>
@@ -486,7 +487,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
         </div>
         <div class="body">
           <h3>Personalized Antibiotic Therapy</h3>
-          <p>A two-stage ML pipeline on 80,000 patient records. Stage 1 predicts per-patient antibiotic resistance (Logistic Regression, kNN, Random Forest, GBT) with LASSO / Stepwise-AIC feature selection. Stage 2 selects the lowest-resistance antibiotic via patient-similarity modeling and Youden's-J dynamic thresholds, reaching 94.52% appropriate therapy — a 6.45% lift over the physician baseline.</p>
+          <p>Raised the appropriate-therapy rate to <b>94.52% (+6.45% over the physician baseline)</b> with a two-stage pipeline on 80K patient records: LASSO / stepwise-AIC feature selection, then per-patient resistance prediction with logistic regression, kNN, random forest and gradient-boosted trees, then patient-similarity modeling with Youden's-J dynamic thresholds to select the lowest-resistance antibiotic.</p>
           <span class="view-cue">View project &amp; repo <span class="arr">→</span></span>
         </div>
       </a>
@@ -504,40 +505,67 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
     <div class="sec-label">The Bench</div>
     <h2 style="font-size:clamp(24px,3.4vw,34px);margin-bottom:30px">Years at the wheel</h2>
     <div class="reveal">
+
       <div class="exp">
-        <div class="exp-when">Jan 2026 – May 2026<small>Knoxville, TN</small></div>
+        <div class="exp-when">Aug 2026 – Present<small>Buffalo, NY</small></div>
         <div>
-          <h3>Software Engineer Intern</h3>
-          <div class="co">Machinery Monitoring Services, LLC</div>
+          <h3>Intern</h3>
+          <div class="co">University at Buffalo · Department of Chemical &amp; Biological Engineering</div>
           <ul>
-            <li>Built an agentic AI layer with MCP and LLMs for natural-language querying, automated alerting and diagnostic reasoning over live sensor data, making complex data actionable for non-technical users.</li>
-            <li>Shipped a real-time inference pipeline and Python/React customer dashboard over the full SDLC, with a plugin-based model registry exposing models through a unified inference contract.</li>
-            <li>Deployed a fault classification and severity system at 99% accuracy on FFT-transformed triaxial vibration data; containerized with Docker across Linux, Windows and AWS EC2.</li>
+            <li>Replacing manual laboratory workflows for faculty researchers by building a full-stack <b>Django</b> web application end to end, covering textile-material data processing and sample tracking.</li>
+            <li>Designed the <b>data model</b>, backend <b>REST APIs</b> and <b>HTML/CSS/JavaScript</b> interfaces, turning researcher requirements into a maintainable system in an active research environment.</li>
+            <li>Generating analytical reports and visualizations from lab data for faculty researchers.</li>
           </ul>
         </div>
       </div>
+
+      <div class="exp">
+        <div class="exp-when">Jan 2026 – May 2026<small>Knoxville, TN</small></div>
+        <div>
+          <h3>Intern</h3>
+          <div class="co">Machinery Monitoring Services, LLC</div>
+          <ul>
+            <li>Enabled non-technical operators to query live sensor data in natural language by building an <b>MCP</b> + LLM agent layer for fault querying, automated severity alerting and diagnostic reasoning.</li>
+            <li>Shipped a real-time inference pipeline and <b>Python/React</b> dashboard across the full SDLC, from sensor acquisition to a live customer-facing UI.</li>
+            <li>Architected a <b>plugin-based model registry</b> behind a unified inference API contract, so models across multiple ML frameworks swap in production without changing callers.</li>
+            <li>Reached <b>99%</b> fault-classification accuracy on FFT-transformed triaxial vibration data; containerized with <b>Docker</b> across Linux, Windows and <b>AWS EC2</b>.</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="exp">
         <div class="exp-when">Jul 2022 – Jun 2024<small>Chennai, India</small></div>
         <div>
           <h3>Senior Software Development Engineer · Technical Lead</h3>
           <div class="co">Ashok Leyland (Hinduja Group)</div>
           <ul>
-            <li>Tech lead for a 5-engineer Scrum team delivering 4 concurrent customer- and dealer-facing applications, owning architecture, reviews, sprint planning and delivery end to end.</li>
-            <li>Built backend services and REST APIs in Python/Django, Java/Spring Boot and Node.js across MySQL, PostgreSQL and MongoDB.</li>
-            <li>Shipped a Gen-AI vehicle-diagnostics workflow cutting technician resolution from 5 minutes to under 3 seconds.</li>
-            <li>Cut deployment time 85% with 7-stage Jenkins CI/CD; built an AES-256 encryption service across Django, Laravel and Spring Boot; served as ISO audit SPOC handling SAST/DAST remediation.</li>
+            <li>Delivered 4 concurrent customer- and dealer-facing applications as tech lead of a 5-engineer Scrum team, owning architecture decisions, design and code reviews, and sprint delivery.</li>
+            <li>Built backend services and REST APIs across <b>MySQL</b>, <b>PostgreSQL</b> and <b>MongoDB</b>, consumed by <b>React</b> and <b>Flutter</b> clients.</li>
+            <li>Built a central <b>authentication service</b> providing <b>SSO</b> across multiple customer-facing applications, issuing and validating shared tokens with role-based authorization and structured logging.</li>
+            <li>Connected applications built on different frameworks through one consistent <b>REST</b> contract, backed by an <b>integration-test suite</b> that caught contract-breaking changes before deployment.</li>
+            <li>Built an <b>AES-256 encryption service</b> protecting sensitive enterprise data exchanged across applications on different frameworks.</li>
+            <li>Designed and built a <b>used-vehicle marketplace</b> end to end, owning the data model, REST APIs and bid workflow, including auto-acceptance rules and margin logic.</li>
+            <li>Integrated <b>Google Maps</b> and <b>Directions APIs</b> with live vehicle-tracking data in the customer application, and contributed code for <b>geofencing</b> and route-deviation detection within a route-planning feature.</li>
+            <li>Cut technician query resolution from <b>7 minutes to under 3 seconds</b> by integrating Gen AI into a REST API that automates vehicle-diagnostics and repair-manual lookups.</li>
+            <li>Cut deployment time <b>85%</b> with a 7-stage <b>Jenkins/Git</b> CI/CD pipeline featuring automated test gates and rollback-on-failure.</li>
+            <li>Served as ISO audit SPOC for external audits, presenting security controls to auditors and remediating <b>SAST/DAST</b> findings.</li>
           </ul>
         </div>
       </div>
+
       <div class="exp">
         <div class="exp-when">Jul 2018 – Jul 2022<small>Chennai, India</small></div>
         <div>
           <h3>Software Development Engineer</h3>
           <div class="co">Ashok Leyland (Hinduja Group)</div>
           <ul>
-            <li>Architected and launched a high-availability customer platform (ALCare) serving 500K+ users / 300K DAUs at 5M+ daily API calls; earned 3× National Customer Experience Excellence Awards.</li>
-            <li>Engineered 200+ REST APIs powering React and Flutter clients; built a unified API abstraction layer integrating SAP ECC, CRM, PLM and Oracle.</li>
-            <li>Automated bidirectional Oracle-to-PLM sync (1M+ records daily) via cron pipelines with alerting, validation and retry; built a Magento storefront generating $1M+ annual revenue.</li>
+            <li>Architected and launched ALCare, a high-availability customer platform serving <b>500K+ users / 300K DAUs</b> at <b>5M+ daily API calls</b>, earning 3× National Customer Experience Excellence Awards.</li>
+            <li>Engineered <b>200+ REST APIs</b> for a vehicle and fleet management application, integrating real-time telematics data to power a <b>Flutter</b> mobile client and a web admin panel.</li>
+            <li>Engineered <b>100+ REST APIs</b>, the <b>React</b> clients and the <b>PostgreSQL</b> schema behind a real-time dealer operations dashboard, used by dealers across India for supplier management, service and warranty tracking, and vehicle tracking.</li>
+            <li>Built a unified API abstraction layer integrating <b>SAP ECC, CRM, PLM and Oracle</b>, eliminating point-to-point integrations across enterprise systems.</li>
+            <li>Automated daily sync of <b>1M+ records</b> across Oracle, PLM and SAP through cron pipelines with alerting, validation and retry, improving cross-system reliability and observability.</li>
+            <li>Consumed real-time <b>Kafka</b> telematics streams (150+ parameters per vehicle at 6-second intervals) from an existing pipeline to power vehicle-tracking and alerting features.</li>
+            <li>Built backend APIs for a <b>Magento</b> e-commerce platform generating <b>$1M+</b> in annual revenue.</li>
           </ul>
         </div>
       </div>
@@ -569,7 +597,7 @@ footer{background:#120d09;text-align:center;color:var(--faint);font-size:12px;le
   <div class="wrap">
     <div class="sec-label">The Gallery</div>
     <h2>Let's build something</h2>
-    <p>Open to Software Engineer and AI-integration roles in the U.S. — authorized to work for 3 years, no immediate sponsorship needed. Tell me what you're building, or just say hello.</p>
+    <p>Open to Software Engineer and AI-integration roles in the U.S. Tell me what you're building, or just say hello.</p>
     <div class="social">
       <a href="mailto:manimegalaimamallan@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/manimegalai-mamallan/" target="_blank" rel="noopener">LinkedIn</a>
@@ -642,29 +670,4 @@ const techStack=[
   {word:'PHP · Laravel',   sub:'full-stack',      glaze:false},
   {word:'React',           sub:'frontend',        glaze:false},
   {word:'REST APIs',       sub:'architecture',    glaze:false},
-  {word:'AWS · Docker',    sub:'cloud + devops',  glaze:false},
-  {word:'PostgreSQL',      sub:'databases',       glaze:false},
-  {word:'PySpark',         sub:'data engineering',glaze:false},
-  {word:'LLMs',            sub:'gen ai',          glaze:true},
-  {word:'MCP · RAG',       sub:'ai integration',  glaze:true},
-  {word:'Agentic AI',      sub:'systems',         glaze:true},
-];
-let ti=0;
-function cycleTech(){
-  wtWord.classList.add('wt-fade');
-  wtSub.classList.add('wt-fade');
-  setTimeout(()=>{
-    ti=(ti+1)%techStack.length;
-    const t=techStack[ti];
-    wtWord.textContent=t.word;
-    wtSub.textContent=t.sub;
-    wtWord.classList.toggle('glz',t.glaze);
-    wtWord.classList.remove('wt-fade');
-    wtSub.classList.remove('wt-fade');
-  },380);
-}
-(function init(){const t=techStack[0];wtWord.textContent=t.word;wtSub.textContent=t.sub;wtWord.classList.toggle('glz',t.glaze);})();
-setInterval(cycleTech,2000);
-</script>
-</body>
-</html>
+  {word:'AWS · Docker',
